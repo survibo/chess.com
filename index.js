@@ -2,6 +2,8 @@ const left_container_item = document.querySelectorAll('.left_container_item');
 const hover_container_item = document.querySelectorAll('.hover_container_item');
 const hover_container = document.getElementById('hover_container');
 const left_container = document.getElementById('left_container');
+const hover_container_items = document.querySelectorAll('.hover_container_items')
+const logo = document.getElementById('logo')
 
 let left_container_check = false
 let hover_container_check = false
@@ -61,4 +63,16 @@ hover_container.addEventListener('mouseleave', function() {
 left_container.addEventListener('mouseleave', function() {
   left_container_check = false
   setTimeout(hover_area, 50);
+});
+
+hover_container_items.forEach(item => {
+  item.addEventListener('click', function() {
+    window.location.href = "https://www.chess.com"
+  })
+});
+
+logo.addEventListener('mousemove', function() {
+  left_container_check = false
+  hover_container_check = false
+  hover_container.style.visibility ='hidden';
 });
