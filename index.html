@@ -11,9 +11,7 @@
 <body>
     <div id="whole">
         <div id="left_container">
-            <div id="logo">
-                <a id="logo_text">Chess<span style="font-weight: 400;">.com</span></a>
-            </div>
+            <div class="left_container_item" id="logo_box"><img id='logo' src="png/logo.png" alt="logo"></div>
             <div class="left_container_item" id="left_container_play">
                 <img class = "left_container_img" src="png/play2.png" alt="Play">
                 <a>Play</a>
@@ -24,6 +22,9 @@
             <div class="left_container_item" id="left_container_news">News</div>
             <div class="left_container_item" id="left_container_social">Social</div>
             <div class="left_container_item" id="left_container_more">More</div>
+            <input type='text' id="search" placeholder="Search">
+            <div id="signup_box" class="id_box"><a>Sign Up</a></div>
+            <div id="login_box" class="id_box"><a>Log In</a></div>
         </div>
 
         <div id="hover_container">
@@ -105,6 +106,40 @@
                 <div class="hover_container_items"><a>Gift</a></div>
                 <div class="hover_container_items"><a>Merch</a></div>
                 <div class="hover_container_items"><a>Computer Championship</a></div>
+            </div>
+        </div>
+
+        <div id="main_container">
+            <div id="main_container_layout">
+                <div id="main_first">
+                    <img id="main_first_img" src="png/chessboard.png" alt="chess board">
+                    <div id="main_first_second">
+                        <a id="main_first_second_title">Play Chess Online<br>on the #1 Site!</a>
+                        <div id="main_static">
+                            <a class="main_static_font"><span class="main_static_value">17,999,069 </span>Games Today</a>
+                            <div style="width: 70px;"></div>
+                            <a class="main_static_font"><span class="main_static_value">173,158 </span>Playing Now</a>
+                        </div>
+                        <div class="main_first_button">
+                            <img class="main_first_button_img" src="png/play3.png" alt="online">
+                            <div class="main_first_button_text">
+                                <a class="main_first_button_title">Play Online</a>
+                                <a style="color: white; font-size: 14px;">Play with someone at your level</a>
+                            </div>
+                        </div>
+                        <div class="main_first_button" style="background-color: rgb(78, 78, 78); border-bottom: 4px solid rgb(58, 58, 58);">
+                            <img class="main_first_button_img" src="png/computer.png" alt="computer">
+                            <div class="main_first_button_text">
+                                <a class="main_first_button_title" style="color: rgb(175, 175, 175);">Play Computer</a>
+                                <a style="color: rgb(175, 175, 175); font-size: 14px;">Play vs customizable training bots</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="main_second">
+
+                </div>
             </div>
         </div>
 

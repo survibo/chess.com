@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 @font-face {
@@ -14,51 +13,54 @@
 
 #whole {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color:#312F2B;
 }
 
 #left_container {
     background-color: #262423;
     width: 10%;
-    height: 100%;
+    height: 100vw;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 #hover_container {
-    height: 100%;
+    height: 100vh;
     width: 20%;
     background-color: rgb(12, 12, 12);
     display: flex;
     flex-direction: column;
-    visibility: hidden;
+    display: hidden;
+    position: fixed;
+    margin-left: 10%;
+    overflow-y: auto;
 }
 
-#logo_text {
-    font-family: "SBAggroB";
-    font-size: 20px;
-    color: white;
-}
-
-#logo {
-    display: flex;
+#logo_box {
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    height: 50px;
+    padding: 0px;
+    padding-top: 4px;
 }
 
-#logo:hover {
+#logo_box:hover{
     background-color: rgb(26, 26, 26);
     cursor: pointer;
 }
+
+#logo {
+    width: 117px;
+    height: 40px;
+}
+
 
 .left_container_item {
     padding: 13px;
     color:rgb(218, 218, 218);
     font-weight: 890;
-    height: 50px;
+    height: 47px;
     display: flex;
     font-size: 15px;
 }
@@ -125,4 +127,166 @@
     font-weight: 700;
     margin: 7px;
     padding: 7px;
+}
+
+#search {
+    background-color: rgb(54, 54, 54);
+    height: 100%;
+    border: 1px, solid, rgb(82, 82, 82);
+    border-radius: 3px;
+    padding-left: 7px;
+    height: 32px;
+    margin: 10px;
+    display: flex;
+    background-image: url(png/search.png);
+    background-position: right;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+}
+
+#search:focus {
+    outline: none;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+
+.id_box {
+    border-radius: 4px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.id_box:hover {
+    cursor: pointer;
+}
+
+#signup_box {
+    color: white;
+    background-color: #81B64C;
+}
+
+#login_box {
+    background-color: rgb(66, 66, 66);
+    color: #FFFFFFb9;
+}
+
+#main_first_img {
+    height: 500px;
+    width: 500px;
+    margin-right: 50px;
+}
+
+#main_first_img:hover {
+    cursor: pointer;
+}
+
+#main_container {
+    margin-left: 10%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+#main_container_layout {
+    width: 1100px;
+    border: 3px black solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding: 30px;
+}
+
+#main_first {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+#main_first_second {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main_first_second_title {
+     color: white;
+     font-size: 40px;
+     text-align: center;
+     display: flex;
+     height: fit-content;
+     font-family: 'SBAggroB';
+     margin-top: 50px;
+}
+
+#main_static {
+    display: flex;
+    height: fit-content;
+    width: auto;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: gray;
+    font-weight: 400;
+}
+
+.main_static_value {
+    color: white;
+    font-weight: 600;
+}
+
+.main_first_button {
+    width: 400px;
+    height: 95px;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #486e21;
+    border-radius: 12px;
+    background-color: #81B64C;
+}
+
+.main_first_button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.main_first_button_text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    text-shadow: 0px 0.5px 0px black;
+}
+
+.main_first_button_title {
+    font-family: 'SBaggroB';
+    color: white;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.main_first_button_img {
+    width: 63px;
+    height: 63px;
+}
+
+#main_second {
+    background-color: #242221;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
 }
