@@ -199,7 +199,6 @@
 
 #main_container_layout {
     width: 1100px;
-    border: 3px black solid;
     display: flex;
     align-items: center;
     flex-direction: column;
