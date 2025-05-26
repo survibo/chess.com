@@ -7,18 +7,18 @@
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
-    font-weight: normal;
+    font-weight:lighter;
     font-style: normal;
 }
 
 #whole {
     display: flex;
     width: 100%;
-    background-color:#312F2B;
+    background-color:#302E2B;
 }
 
 #left_container {
-    background-color: #262423;
+    background-color: #262522;
     width: 10%;
     height: 100vw;
     display: flex;
@@ -29,13 +29,17 @@
 #hover_container {
     height: 100vh;
     width: 20%;
-    background-color: rgb(12, 12, 12);
+    background-color: #141413;
     display: flex;
     flex-direction: column;
     visibility: hidden;
     position: fixed;
     margin-left: 10%;
     overflow-y: auto;
+}
+
+#hover_container::-webkit-scrollbar {
+    width: 5px;
 }
 
 #logo_box {
@@ -162,6 +166,7 @@
     background-color: white;
     font-weight: 600;
     font-size: 14px;
+    border-bottom: #486e21 1px solid;
 }
 
 .id_box:hover {
@@ -174,14 +179,17 @@
 }
 
 #login_box {
-    background-color: rgb(66, 66, 66);
+    background-color: #3C3A38;
     color: #FFFFFFb9;
+    border-bottom: #242221 1px solid;
+
 }
 
 #main_first_img {
     height: 500px;
     width: 500px;
     margin-right: 50px;
+    border-radius: 7px;
 }
 
 #main_first_img:hover {
@@ -220,7 +228,7 @@
     align-items: center;
 }
 
-#main_first_second_title {
+.main_first_second_title {
      color: white;
      font-size: 40px;
      text-align: center;
@@ -248,7 +256,7 @@
 
 .main_first_button {
     width: 400px;
-    height: 95px;
+    height: 100px;
     margin: 15px;
     padding: 20px;
     display: flex;
@@ -256,11 +264,6 @@
     border-bottom: 4px solid #486e21;
     border-radius: 12px;
     background-color: #81B64C;
-}
-
-.main_first_button:hover {
-    filter: brightness(1.2);
-    cursor: pointer;
 }
 
 .main_first_button_text {
@@ -282,10 +285,83 @@
     height: 63px;
 }
 
-#main_second {
-    background-color: #242221;
+.main_second {
+    background-color: #262522;
     height: 500px;
     width: 100%;
     margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bright:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+#main_second_first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.main_second_img {
+    width: 400px;
+    height: 410px;
+    margin: 50px;
+    margin-bottom: 60px;
+}
+
+#main_second_img:hover {
+    cursor: pointer;
+}
+
+#main_second_button {
+    width: 200px;
+    height: 65px;
+    background-color: #81B64C;
+    border-radius: 7px;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'SBaggroB';
+    text-shadow: 0px 0.5px 0px black;
+    border-bottom: 4px solid #486e21;
+
+}
+
+#main_second_first_second {
+    display: flex;
+    width: 100%;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#main_second_first_second_second {
+    margin-left: 50px;
+    color: lightgray;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gm {
+    background-color: #722F2C;
     border-radius: 5px;
+    width: 30px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    margin-right: 7px;
+    font-weight: 500;
+    transform: translate(0px, 3px);
+
 }
