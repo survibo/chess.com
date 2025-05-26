@@ -8,6 +8,9 @@ const login_box = document.getElementById('login_box')
 const signup_box = document.getElementById('signup_box')
 const main_first_img = document.getElementById('main_first_img')
 const main_first_button = document.querySelectorAll('.main_first_button')
+const main_second_button = document.querySelectorAll('.main_second_button')
+const logos = document.querySelectorAll('.logos_svg')
+const main_img = document.querySelectorAll('.main_second_img');
 
 let left_container_check = false
 let hover_container_check = false
@@ -89,3 +92,25 @@ main_first_button.forEach(el => {
     window.location.href = "https://github.com/survibo/chess.com"
   })
 })
+
+main_second_button.forEach(el => {
+  el.addEventListener('click', function() {
+    window.location.href = "https://www.chess.com"
+  })
+})
+
+logos.forEach(logo => {
+  logo.addEventListener('mouseenter', function() {
+    logo.src = logo.src.replace('.png', '_active.png');
+  });
+
+  logo.addEventListener('mouseleave', function() {
+    logo.src = logo.src.replace('_active.png', '.png');
+  });
+});
+
+main_img.forEach(img => {
+  img.addEventListener('click', function() {
+    window.location.href = "https://www.chess.com";
+  });
+});
