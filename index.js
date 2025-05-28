@@ -11,6 +11,10 @@ const main_first_button = document.querySelectorAll('.main_first_button')
 const main_second_button = document.querySelectorAll('.main_second_button')
 const logos = document.querySelectorAll('.logos_svg')
 const main_img = document.querySelectorAll('.main_second_img');
+const lang_box = document.getElementById('lang')
+const support_box = document.getElementById('support')
+const lang_img = document.getElementById('lang_img')
+const support_img = document.getElementById('support_img')
 
 let left_container_check = false
 let hover_container_check = false
@@ -113,4 +117,20 @@ main_img.forEach(img => {
   img.addEventListener('click', function() {
     window.location.href = "https://www.chess.com";
   });
+});
+
+lang_box.addEventListener('mouseenter', function() {
+  lang_img.src = lang_img.src.replace('.png', '_active.png');
+});
+
+lang_box.addEventListener('mouseleave', function() {
+  lang_img.src = lang_img.src.replace('_active.png', '.png');
+});
+
+support_box.addEventListener('mouseenter', function() {
+  support_img.src = support_img.src.replace('.png', '_active.png');
+});
+
+support_box.addEventListener('mouseleave', function() {
+  support_img.src = support_img.src.replace('_active.png', '.png');
 });
